@@ -1,13 +1,13 @@
 import pandas as pd
 import psycopg2
 
-# ========== 修改1：Excel 文件路径 ==========
+# 修改1：Excel 文件路径
 df = pd.read_excel(r"C:\Users\lenovo\Desktop\employees.xlsx")
 
 # 简单清洗（去掉 emp_id 为空的行）
 df = df.dropna(subset=["emp_id"])
 
-# ========== 修改2：PostgreSQL 密码 ==========
+# 修改2：PostgreSQL 密码
 conn = psycopg2.connect(
     database="migration_demo",
     user="postgres",
@@ -27,4 +27,4 @@ conn.commit()
 cur.close()
 conn.close()
 
-print("✅ 数据导入完成！")
+print("数据导入完成！")
