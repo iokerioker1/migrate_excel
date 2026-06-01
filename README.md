@@ -27,13 +27,18 @@
 ## 数据核对结果
 - 原 Excel 行数：3
 - 导入后数据库行数：3
-- 数据一致性：✅ 通过
+- 数据一致性：通过
 
 ## 备份恢复验证
 - 备份格式：Plain SQL（可读）
-- 删除数据后可完整恢复 ✅
+- 删除数据后可完整恢复 
 
 ## 使用环境
 - PostgreSQL 17.6
 - DBeaver 26.0.5
 - Python 3.14 + pandas + psycopg2
+## 如何快速运行
+1.  **环境准备**：确保已安装 Python 和 PostgreSQL。
+2.  **安装依赖**：`pip install pandas psycopg2-binary openpyxl`
+3.  **修改配置**：打开 `migrate_excel_to_db.py`，将数据库密码 `"你的密码"` 改为你自己的。
+4.  **运行脚本**：`python migrate_excel_to_db.py`
