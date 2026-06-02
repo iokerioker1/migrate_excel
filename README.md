@@ -14,8 +14,7 @@
 |------|------|
 | `migrate_excel_to_db.py` | Python ETL 脚本 |
 | `employees.xlsx` | 原始数据 |
-| `employees.csv` | CSV 格式原始数据 |
-| `exported_employees.csv` | 数据库导出核对文件 |
+| `employees.csv` | 数据库导出核对文件 |
 | `backup_demo_plain.sql` | 纯文本 SQL 备份 |
 
 ## 操作流程
